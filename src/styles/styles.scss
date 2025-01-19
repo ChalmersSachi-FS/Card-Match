@@ -1,0 +1,54 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #2c3e50;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: $text-color;
+  text-align: center;
+}
+
+#game-container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card {
+  background-color: $primary-color;
+  color: white;
+  font-size: 2rem;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+}
+
+.card:hover {
+  background-color: $secondary-color;
+}
+
+#status {
+  margin-top: 20px;
+}
+
+button {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: $secondary-color;
+}
